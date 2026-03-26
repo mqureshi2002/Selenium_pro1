@@ -1,0 +1,29 @@
+package TestNG;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Annotationattributes {
+	@Test()
+	public void login() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://www.flipkart.com/account/login?ret=/");
+	}
+	@Test()
+	public void homepage() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://www.flipkart.com/");
+		
+		
+	}
+
+	
+
+}
