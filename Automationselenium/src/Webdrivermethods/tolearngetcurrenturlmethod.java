@@ -10,9 +10,9 @@ public class tolearngetcurrenturlmethod {
 		 String url = driver.getCurrentUrl();
 		System.out.println(url);
 		if(url.equals("https://www.myntra.com/shop/women"))
-		System.out.println("womens page is displayed");
+		System.out.println("womens page  displayed");
 		else
-			System.out.println("womens page is not displayed");
+			System.out.println("womens page not displayed");
 	}
 
 }
